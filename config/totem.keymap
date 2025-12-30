@@ -103,10 +103,10 @@
 
         game {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &kp ESCAPE  &kp Q  &kp W   &kp E      &kp R     &trans  &trans     &trans     &trans    &trans
+        &kp LSHFT   &kp A  &kp S   &kp D      &kp F     &trans  &kp LSHFT  &kp LCTRL  &kp LGUI  &kp LALT
+&trans  &kp LCTRL   &kp Z  &kp X   &kp C      &kp V     &trans  &trans     &trans     &trans    &trans    &trans
+                           &kp N2  &kp SPACE  &kp N1    &trans  &trans     &trans
             >;
         };
 
