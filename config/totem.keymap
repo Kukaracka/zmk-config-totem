@@ -62,6 +62,17 @@
         };
     };
 
+    behaviors {
+        gui_center_tapdance: gui_center_tapdance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "GUI_CENTER_TAPDANCE";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI>, <&kp LG(D)>;
+
+            tapping-term-ms = <200>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -84,10 +95,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp Q           &kp W           &kp F               &kp P             &kp B        &kp J        &kp L              &kp U               &kp Y            &kp SEMI
-        &mt LEFT_ALT A  &mt LEFT_GUI R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G        &kp M        &mt RIGHT_SHIFT N  &mt LEFT_CONTROL E  &mt RIGHT_GUI I  &mt RIGHT_ALT O
-&trans  &kp Z           &kp X           &kp C               &kp D             &kp V        &kp K        &kp H              &kp COMMA           &kp DOT          &kp FSLH         &kp BSLH
-                                        &lt 3 ESCAPE        &lt 4 SPACE       &lt 5 TAB    &lt 6 ENTER  &lt 7 BACKSPACE    &lt 8 DELETE
+                      &kp Q           &kp W           &kp F               &kp P             &kp B        &kp J        &kp L              &kp U               &kp Y            &kp SEMI
+                      &mt LEFT_ALT A  &mt LEFT_GUI R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G        &kp M        &mt RIGHT_SHIFT N  &mt LEFT_CONTROL E  &mt RIGHT_GUI I  &mt RIGHT_ALT O
+&gui_center_tapdance  &kp Z           &kp X           &kp C               &kp D             &kp V        &kp K        &kp H              &kp COMMA           &kp DOT          &kp FSLH         &kp BSLH
+                                                      &lt 3 ESCAPE        &lt 4 SPACE       &lt 5 TAB    &lt 6 ENTER  &lt 7 BACKSPACE    &lt 8 DELETE
             >;
         };
 
