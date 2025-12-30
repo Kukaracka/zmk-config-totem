@@ -86,7 +86,7 @@
         &kp Q           &kp W           &kp F               &kp P             &kp B          &kp J        &kp L              &kp U               &kp Y            &kp SEMI
         &mt LEFT_ALT A  &mt LEFT_GUI R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G          &kp M        &mt RIGHT_SHIFT N  &mt LEFT_CONTROL E  &mt RIGHT_GUI I  &mt RIGHT_ALT O
 &trans  &kp Z           &kp X           &kp C               &kp D             &kp V          &kp K        &kp H              &kp COMMA           &kp DOT          &kp FSLH         &kp BSLH
-                                        &lt 5 ESCAPE        &lt 6 TAB         &lt 1 SPACE    &lt 2 ENTER  &lt 3 BACKSPACE    &lt 7 DELETE
+                                        &lt 6 ESCAPE        &lt 7 TAB         &lt 1 SPACE    &lt 2 ENTER  &lt 3 BACKSPACE    &lt 4 DELETE
             >;
         };
 
@@ -117,6 +117,15 @@
             >;
         };
 
+        fun {
+            bindings = <
+        &kp F12  &kp F7  &kp F8   &kp F9   &kp PRINTSCREEN    &trans  &trans     &trans     &trans    &trans
+        &kp F11  &kp F4  &kp F5   &kp F6   &kp SCROLLLOCK     &trans  &kp LSHFT  &kp LCTRL  &kp LGUI  &kp LALT
+&trans  &kp F10  &kp F1  &kp F2   &kp F3   &kp PAUSE_BREAK    &trans  &trans     &trans     &trans    &trans    &trans
+                         &kp ESC  &kp TAB  &kp SPACE          &trans  &trans     &trans
+            >;
+        };
+
         layer_1 {
             bindings = <
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
@@ -136,15 +145,6 @@
         };
 
         layer_3 {
-            bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        layer_7 {
             bindings = <
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
