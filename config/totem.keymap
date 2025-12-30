@@ -86,15 +86,27 @@
         &kp Q           &kp W           &kp F               &kp P             &kp B          &kp J        &kp L              &kp U               &kp Y            &kp SEMI
         &mt LEFT_ALT A  &mt LEFT_GUI R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G          &kp M        &mt RIGHT_SHIFT N  &mt LEFT_CONTROL E  &mt RIGHT_GUI I  &mt RIGHT_ALT O
 &trans  &kp Z           &kp X           &kp C               &kp D             &kp V          &kp K        &kp H              &kp COMMA           &kp DOT          &kp FSLH         &kp BSLH
-                                        &lt 2 ESCAPE        &lt 3 TAB         &lt 4 SPACE    &lt 5 ENTER  &lt 6 BACKSPACE    &lt 7 DELETE
+                                        &lt 4 ESCAPE        &lt 5 TAB         &lt 1 SPACE    &lt 2 ENTER  &lt 6 BACKSPACE    &lt 7 DELETE
             >;
         };
 
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+        nav {
+            bindings = <
+        &trans    &trans    &trans     &trans     &trans    &kp LC(Z)  &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp LC(Y)
+        &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &kp CAPS   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT
+&trans  &trans    &trans    &trans     &trans     &trans    &kp INS    &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &trans
+                            &trans     &trans     &trans    &kp RET    &kp BSPC   &kp DEL
+            >;
+        };
+
+        sym {
+            bindings = <
+        &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &trans  &trans     &trans     &trans    &trans
+        &kp COLON       &kp DOLLAR       &kp PERCENT           &kp LCTRL              &kp PLUS           &trans  &kp LSHFT  &kp LCTRL  &kp LGUI  &kp LALT
+&trans  &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE           &trans  &trans     &trans     &trans    &trans    &trans
+                                         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE     &trans  &trans     &trans
+            >;
+        };
 
         layer_1 {
             bindings = <
@@ -115,24 +127,6 @@
         };
 
         layer_3 {
-            bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        nav {
-            bindings = <
-        &trans    &trans    &trans     &trans     &trans    &kp LC(Z)  &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp LC(Y)
-        &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &kp CAPS   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT
-&trans  &trans    &trans    &trans     &trans     &trans    &kp INS    &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &trans
-                            &trans     &trans     &trans    &kp RET    &kp BSPC   &kp DEL
-            >;
-        };
-
-        layer_5 {
             bindings = <
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
