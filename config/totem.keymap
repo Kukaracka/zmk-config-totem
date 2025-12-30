@@ -89,16 +89,16 @@
         &kp Q           &kp W           &kp F               &kp P             &kp B        &kp J        &kp L              &kp U               &kp Y            &kp SEMI
         &mt LEFT_ALT A  &mt LEFT_GUI R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G        &kp M        &mt RIGHT_SHIFT N  &mt LEFT_CONTROL E  &mt RIGHT_GUI I  &mt RIGHT_ALT O
 &trans  &kp Z           &kp X           &kp C               &kp D             &kp V        &kp K        &kp H              &kp COMMA           &kp DOT          &kp FSLH         &kp BSLH
-                                        &lt 3 ESCAPE        &lt 5 SPACE       &lt 4 TAB    &lt 6 ENTER  &lt 7 BACKSPACE    &lt 8 DELETE
+                                        &lt 3 ESCAPE        &lt 4 SPACE       &lt 5 TAB    &lt 6 ENTER  &lt 7 BACKSPACE    &lt 8 DELETE
             >;
         };
 
         russian {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+                           &kp RU_CYRILLIC_SHORT_I      &kp RU_CYRILLIC_TSE            &kp RU_CYRILLIC_U                &kp RU_CYRILLIC_KA            &kp RU_CYRILLIC_IE    &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE            &kp RU_CYRILLIC_SHA               &kp RU_CYRILLIC_SHCHA         &kp RU_CYRILLIC_ZE
+                           &mt LEFT_ALT RU_CYRILLIC_EF  &mt LEFT_GUI RU_CYRILLIC_YERU  &mt LEFT_CONTROL RU_CYRILLIC_VE  &mt LEFT_SHIFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE    &kp RU_CYRILLIC_ER  &mt RIGHT_SHIFT RU_CYRILLIC_O  &mt RIGHT_CONTROL RU_CYRILLIC_EL  &mt RIGHT_GUI RU_CYRILLIC_DE  &mt RIGHT_ALT RU_CYRILLIC_ZHE
+&kp RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_YA           &kp RU_CYRILLIC_CHE            &kp RU_CYRILLIC_ES               &kp RU_CYRILLIC_EM            &kp RU_CYRILLIC_I     &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN      &kp RU_CYRILLIC_BE                &kp RU_CYRILLIC_YU            &kp RU_CYRILLIC_E              &kp RU_CYRILLIC_HA
+                                                                                       &lt 3 ESC                        &lt 4 SPACE                   &lt 5 TAB             &lt 6 RET           &lt 7 BACKSPACE                &lt 8 DELETE
             >;
         };
 
@@ -120,21 +120,21 @@
             >;
         };
 
-        mouse {
-            bindings = <
-        &trans    &trans    &trans     &trans     &trans    &kp LS(Y)  &kp LS(V)       &kp LS(C)       &kp LS(X)     &kp LS(Z)
-        &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &mkp MB4   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
-&trans  &trans    &trans    &trans     &trans     &trans    &mkp MB5   &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
-                            &trans     &trans     &trans    &mkp MB2   &mkp MB1        &mkp MB3
-            >;
-        };
-
         nav {
             bindings = <
         &trans    &trans    &trans     &trans     &trans    &kp LC(Y)  &kp LC(V)   &kp LC(C)     &kp LC(X)  &kp LC(Z)
         &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &kp CAPS   &kp LEFT    &kp DOWN      &kp UP     &kp RIGHT
 &trans  &trans    &trans    &trans     &trans     &trans    &kp INS    &kp HOME    &kp PG_DN     &kp PG_UP  &kp END    &trans
                             &trans     &trans     &trans    &kp COMMA  &kp PERIOD  &kp QUESTION
+            >;
+        };
+
+        mouse {
+            bindings = <
+        &trans    &trans    &trans     &trans     &trans    &kp LS(Y)  &kp LS(V)       &kp LS(C)       &kp LS(X)     &kp LS(Z)
+        &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &mkp MB4   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
+&trans  &trans    &trans    &trans     &trans     &trans    &mkp MB5   &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
+                            &trans     &trans     &trans    &mkp MB2   &mkp MB1        &mkp MB3
             >;
         };
 
