@@ -71,6 +71,24 @@
 
             tapping-term-ms = <200>;
         };
+
+        soft_hard_sign: soft_hard_sign {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SOFT_HARD_SIGN";
+            #binding-cells = <0>;
+            bindings = <&kp RU_CYRILLIC_SOFT_SIGN>, <&kp RU_CYRILLIC_HARD_SIGN>;
+
+            tapping-term-ms = <200>;
+        };
+
+        ye_yo: ye_yo {
+            compatible = "zmk,behavior-tap-dance";
+            label = "YE_YO";
+            #binding-cells = <0>;
+            bindings = <&kp RU_CYRILLIC_IE>, <&kp RU_CYRILLIC_IO>;
+
+            tapping-term-ms = <200>;
+        };
     };
 
     keymap {
@@ -95,19 +113,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                      &kp Q           &kp W           &kp F               &kp P             &kp B        &kp J        &kp L              &kp U               &kp Y            &kp SEMI
+                      &kp Q           &kp W           &kp F               &kp P             &ye_yo       &kp J        &kp L              &kp U               &kp Y            &kp SEMI
                       &mt LEFT_ALT A  &mt LEFT_GUI R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G        &kp M        &mt RIGHT_SHIFT N  &mt LEFT_CONTROL E  &mt RIGHT_GUI I  &mt RIGHT_ALT O
-&gui_center_tapdance  &kp Z           &kp X           &kp C               &kp D             &kp V        &kp K        &kp H              &kp COMMA           &kp DOT          &kp FSLH         &kp BSLH
-                                                      &lt 3 ESCAPE        &lt 4 SPACE       &lt 5 TAB    &lt 6 ENTER  &lt 7 BACKSPACE    &lt 8 DELETE
-            >;
-        };
-
-        lg_russian {
-            bindings = <
-                           &kp RU_CYRILLIC_SHORT_I      &kp RU_CYRILLIC_TSE            &kp RU_CYRILLIC_U                &kp RU_CYRILLIC_KA            &kp RU_CYRILLIC_IE    &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE            &kp RU_CYRILLIC_SHA               &kp RU_CYRILLIC_SHCHA         &kp RU_CYRILLIC_ZE
-                           &mt LEFT_ALT RU_CYRILLIC_EF  &mt LEFT_GUI RU_CYRILLIC_YERU  &mt LEFT_CONTROL RU_CYRILLIC_VE  &mt LEFT_SHIFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE    &kp RU_CYRILLIC_ER  &mt RIGHT_SHIFT RU_CYRILLIC_O  &mt RIGHT_CONTROL RU_CYRILLIC_EL  &mt RIGHT_GUI RU_CYRILLIC_DE  &mt RIGHT_ALT RU_CYRILLIC_ZHE
-&kp RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_YA           &kp RU_CYRILLIC_CHE            &kp RU_CYRILLIC_ES               &kp RU_CYRILLIC_EM            &kp RU_CYRILLIC_I     &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN      &kp RU_CYRILLIC_BE                &kp RU_CYRILLIC_YU            &kp RU_CYRILLIC_E              &kp RU_CYRILLIC_HA
-                                                                                       &lt 3 ESC                        &lt 4 SPACE                   &lt 5 TAB             &lt 6 RET           &lt 7 BACKSPACE                &lt 8 DELETE
+&gui_center_tapdance  &kp Z           &kp X           &kp C               &kp D             &kp V        &kp K        &soft_hard_sign    &kp COMMA           &kp DOT          &kp FSLH         &kp BSLH
+                                                      &lt 2 ESCAPE        &lt 3 SPACE       &lt 4 TAB    &lt 5 ENTER  &lt 6 BACKSPACE    &lt 7 DELETE
             >;
         };
 
@@ -116,7 +125,7 @@
                       &kp ESCAPE  &kp Q  &kp W     &kp E      &kp R     &trans  &trans     &trans     &trans    &trans
                       &kp LSHFT   &kp A  &kp S     &kp D      &kp F     &trans  &kp LSHFT  &kp LCTRL  &kp LGUI  &kp LALT
 &gui_center_tapdance  &kp LCTRL   &kp Z  &kp X     &kp C      &kp V     &trans  &trans     &trans     &trans    &trans    &trans
-                                         &lt 3 N2  &kp SPACE  &kp N1    &trans  &trans     &trans
+                                         &lt 2 N2  &kp SPACE  &kp N1    &trans  &trans     &trans
             >;
         };
 
@@ -125,7 +134,7 @@
         &trans    &trans    &trans     &trans     &trans    &bt BT_CLR    &bt BT_CLR_ALL  &kp C_MUTE         &kp C_STOP       &trans
         &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &kp C_PP      &kp C_PREV      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT
 &trans  &trans    &trans    &trans     &trans     &trans    &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4  &trans
-                            &trans     &trans     &trans    &tog 0        &tog 1          &tog 2
+                            &trans     &trans     &trans    &tog 0        &tog 0          &tog 1
             >;
         };
 
