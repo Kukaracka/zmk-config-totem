@@ -113,10 +113,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                      &kp Q           &kp W           &kp F               &kp P             &ye_yo       &kp J        &kp L              &kp U               &kp Y            &kp SEMI
-                      &mt LEFT_ALT A  &mt LEFT_GUI R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G        &kp M        &mt RIGHT_SHIFT N  &mt LEFT_CONTROL E  &mt RIGHT_GUI I  &mt RIGHT_ALT O
-&gui_center_tapdance  &kp Z           &kp X           &kp C               &kp D             &kp V        &kp K        &soft_hard_sign    &kp COMMA           &kp DOT          &kp FSLH         &kp BSLH
-                                                      &lt 2 ESCAPE        &lt 3 SPACE       &lt 4 TAB    &lt 5 ENTER  &lt 6 BACKSPACE    &lt 7 DELETE
+                  &kp Q           &kp W           &kp F               &kp P             &ye_yo       &kp J        &kp L              &kp U               &kp Y            &kp SEMI
+                  &mt LEFT_ALT A  &mt LEFT_GUI R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G        &kp M        &mt RIGHT_SHIFT N  &mt LEFT_CONTROL E  &mt RIGHT_GUI I  &mt RIGHT_ALT O
+&kp LEFT_BRACKET  &kp Z           &kp X           &kp C               &kp D             &kp V        &kp K        &soft_hard_sign    &kp COMMA           &kp DOT          &kp DQT          &kp RIGHT_BRACKET
+                                                  &lt 2 ESCAPE        &lt 3 SPACE       &lt 4 TAB    &lt 5 ENTER  &lt 6 BACKSPACE    &lt 7 FSLH
             >;
         };
 
