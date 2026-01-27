@@ -139,7 +139,7 @@
         &trans    &trans    &trans     &trans     &trans    &bt BT_CLR    &bt BT_CLR_ALL  &kp C_MUTE         &kp C_STOP       &trans
         &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &kp C_PP      &kp C_PREV      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT
 &trans  &trans    &trans    &trans     &trans     &trans    &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4  &trans
-                            &trans     &trans     &trans    &tog 0        &tog 0          &tog 1
+                            &trans     &trans     &trans    &mo 0         &mo 0           &mo 1
             >;
         };
 
