@@ -43,6 +43,11 @@
             bindings = <&kp DQT>;
             key-positions = <12 11>;
         };
+
+        gui {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <33 36>;
+        };
     };
 
     macros {
