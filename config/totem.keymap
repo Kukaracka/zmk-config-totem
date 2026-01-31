@@ -145,10 +145,10 @@
 
         nav {
             bindings = <
-        &trans    &trans    &trans     &trans     &trans    &kp LC(Y)  &kp LC(V)   &kp LC(C)     &kp LC(X)  &kp LC(Z)
-        &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &kp CAPS   &kp LEFT    &kp DOWN      &kp UP     &kp RIGHT
-&trans  &trans    &trans    &trans     &trans     &trans    &kp INS    &kp HOME    &kp PG_DN     &kp PG_UP  &kp END    &trans
-                            &trans     &trans     &trans    &kp COMMA  &kp PERIOD  &kp QUESTION
+        &trans    &trans    &trans     &trans     &trans    &kp LC(Y)  &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp LC(Z)
+        &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &kp CAPS   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT
+&trans  &trans    &trans    &trans     &trans     &trans    &kp INS    &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &trans
+                            &trans     &trans     &trans    &kp F13    &kp F14    &kp F15
             >;
         };
 
